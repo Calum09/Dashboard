@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Topbar Section -->
+
+      <div class="topbar">
+        <div class="logo">
+          <h2>Brand</h2>
+        </div>
+        <div class="search">
+          <input type="text" id="search" placeholder="Search" />
+          <label for="search"></label>
+          <i class="material-icons-outlined"> search </i>
+        </div>
+        <div class="user"></div>
+      </div>
+
+      <!-- Sidebar Section -->
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> dashboard </span>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> inventory_2 </span>
+              <div>Products</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> done </span>
+              <div>Inventory</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> badge </span>
+              <div>Employees</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> analytics </span>
+              <div>Analytics</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> attach_money </span>
+              <div>Earnings</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> settings </span>
+              <div>Settings</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-icons-outlined"> help </span>
+              <div>Help</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Cards Section -->
+      <div class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="number">100</div>
+              <div class="card-name">Products</div>
+            </div>
+            <div class="icon-box">
+              <span class="material-icons-outlined"> inventory_2 </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">500</div>
+              <div class="card-name">Sale Orders</div>
+            </div>
+            <div class="icon-box">
+              <span class="material-icons-outlined"> attach_money </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">1300</div>
+              <div class="card-name">Inventory</div>
+            </div>
+            <div class="icon-box">
+              <span class="material-icons-outlined"> done </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">83</div>
+              <div class="card-name">Employees</div>
+            </div>
+            <div class="icon-box">
+              <span class="material-icons-outlined"> badge </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts">
+          <div class="chart" id="line-chart">
+            <h2>Earnings (past 12 months)</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+          <div class="chart" id="doughnut-chart">
+            <h2>Products</h2>
+            <canvas id="doughnutChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="JavaScript/lineChart.js"></script>
+    <script type="module" src="JavaScript/DoughnutChart.js"></script>
+  </body>
+</html>
